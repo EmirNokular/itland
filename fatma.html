@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT‑Land – Festplatten‑Fatma</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <!--
+    Diese Seite stellt Festplatten‑Fatma vor. Sie erklärt den Unterschied zwischen
+    Speicher, Festplatte und RAM in einem kurzen Text. Danach folgt ein Quiz.
+  -->
+</head>
+<body>
+  <div class="container">
+    <div class="lesson">
+      <h1>💽 Festplatten‑Fatma</h1>
+      <p>
+        Fatma kümmert sich um alles, was mit Daten zu tun hat. In einem Computer gibt es zwei
+        wesentliche Speicherarten: den Arbeitsspeicher (RAM) und den Massenspeicher. Der
+        Arbeitsspeicher ist wie ein Notizblock: Er ist schnell und hält Daten, solange der
+        Computer eingeschaltet ist. Schaltst du das Gerät aus, wird der RAM geleert. Die
+        Festplatte oder SSD dagegen ist wie ein Archiv: Hier landen Fotos, Dokumente und
+        Programme dauerhaft. SSDs speichern Daten auf Flash‑Chips und sind schneller als
+        herkömmliche Festplatten mit rotierenden Scheiben. Zusätzlich gibt es noch Cache‑Speicher,
+        der als winziger Zwischenstopp für Daten dient, um den Prozessor zu beschleunigen. Fatma
+        erklärt, wie diese verschiedenen Speicher zusammenarbeiten: Der Prozessor liest Daten aus
+        der Festplatte in den RAM, verarbeitet sie und schreibt Ergebnisse zurück. Du profitierst
+        davon, wenn du deinen Speicher kennst – denn Geschwindigkeit und Kapazität bestimmen,
+        wie flüssig dein System läuft.
+      </p>
+      <div class="question">Welche Daten gehen verloren, wenn der Computer ausgeschaltet wird?</div>
+      <div class="answers">
+        <label><input type="radio" name="answer" value="ram">Daten im RAM</label>
+        <label><input type="radio" name="answer" value="hdd">Daten auf der Festplatte</label>
+        <label><input type="radio" name="answer" value="cloud">Daten in der Cloud</label>
+      </div>
+      <button class="btn" onclick="checkAnswer('ram', 'feedback-fatma')">Antwort prüfen</button>
+      <div class="feedback" id="feedback-fatma"></div>
+      <a class="nav-link" href="index.html">Zurück zur Startseite</a>
+    </div>
+  </div>
+</body>
+</html>

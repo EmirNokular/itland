@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT‑Land – Laptop‑Leila</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <!--
+    Diese Seite stellt Laptop‑Leila vor und erklärt kurz die Grundlagen
+    eines Computers. Eine Multiple‑Choice‑Frage am Ende prüft das Gelernte.
+  -->
+</head>
+<body>
+  <div class="container">
+    <div class="lesson">
+      <h1>💻 Laptop‑Leila</h1>
+      <p>
+        Leila nimmt dich mit auf eine Reise durch das Innenleben eines Computers. Ein Rechner besteht
+        aus dem Prozessor (CPU), der wie das Gehirn Befehle ausführt, aus dem Arbeitsspeicher (RAM),
+        der Daten kurzfristig bereithält, und aus festen Speichermedien wie Festplatten oder SSDs,
+        in denen Dateien dauerhaft liegen. Daneben gibt es Eingabegeräte (Tastatur, Maus) und
+        Ausgabegeräte (Bildschirm, Drucker), mit denen du kommunizierst. Die Software bildet
+        zusammen mit der Hardware ein Team: das Betriebssystem steuert alles, Programme erledigen
+        konkrete Aufgaben. All diese Bausteine arbeiten zusammen, damit dein Laptop dir beim Surfen,
+        Schreiben oder Spielen zur Seite stehen kann. Ein bisschen Magie steckt natürlich auch
+        dahinter: Milliarden von winzigen Transistoren schalten blitzschnell, damit du deine Arbeit
+        erledigen kannst – und Leila erklärt dir das mit einem Augenzwinkern und viel Geduld.
+      </p>
+      <div class="question">Welche Komponente wird als „Gehirn“ des Computers bezeichnet?</div>
+      <div class="answers">
+        <label><input type="radio" name="answer" value="cpu">Der Prozessor (CPU)</label>
+        <label><input type="radio" name="answer" value="hdd">Die Festplatte</label>
+        <label><input type="radio" name="answer" value="screen">Der Bildschirm</label>
+      </div>
+      <button class="btn" onclick="checkAnswer('cpu', 'feedback-leila')">Antwort prüfen</button>
+      <div class="feedback" id="feedback-leila"></div>
+      <a class="nav-link" href="index.html">Zurück zur Startseite</a>
+    </div>
+  </div>
+</body>
+</html>

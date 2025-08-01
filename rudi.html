@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT‑Land – Router‑Rudi</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+  <!--
+    Diese Seite stellt Router‑Rudi vor. Er erklärt Netzwerke und WLAN in einer
+    spielerischen, kompakten Form. Am Ende erwartet dich eine kleine Quizfrage.
+  -->
+</head>
+<body>
+  <div class="container">
+    <div class="lesson">
+      <h1>📡 Router‑Rudi</h1>
+      <p>
+        Rudi ist der Meister der Verbindung. In einem Netzwerk kommunizieren Geräte wie
+        Computer, Smartphones und Drucker miteinander. Ein Router ist das Postamt in der Mitte:
+        er verbindet dein lokales Netzwerk mit dem Internet, verteilt Datenpakete an die richtige
+        Stelle und sorgt dafür, dass niemand durcheinander kommt. Per WLAN (Wireless LAN)
+        werden Informationen drahtlos übertragen – ganz ohne Kabel. Dafür nutzt der Router
+        Funkwellen, ähnlich wie beim Radio. Ethernet hingegen verwendet Kabel, um Daten
+        besonders stabil und schnell zu transportieren. Je mehr Geräte sich verbinden, desto
+        wichtiger wird es, Adressen (IP‑Adressen) ordentlich zu verwalten. Dank Protokollen wie
+        TCP/IP wissen die Daten genau, wohin sie müssen. Rudi erklärt dir diese Konzepte mit
+        einfachen Bildern: Stell dir vor, du versendest Briefe – der Router sortiert und
+        zustellt sie, egal ob per Postkutsche (Kabel) oder Brieftaube (WLAN).
+      </p>
+      <div class="question">Welche Technologie ermöglicht die drahtlose Datenübertragung im Heimnetz?</div>
+      <div class="answers">
+        <label><input type="radio" name="answer" value="wlan">WLAN</label>
+        <label><input type="radio" name="answer" value="ethernet">Ethernet</label>
+        <label><input type="radio" name="answer" value="usb">USB</label>
+      </div>
+      <button class="btn" onclick="checkAnswer('wlan', 'feedback-rudi')">Antwort prüfen</button>
+      <div class="feedback" id="feedback-rudi"></div>
+      <a class="nav-link" href="index.html">Zurück zur Startseite</a>
+    </div>
+  </div>
+</body>
+</html>
